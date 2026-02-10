@@ -1,0 +1,7 @@
+.DS_Store
+.DS_store
+__pycahce__/
+__pycahce__/*
+__pycahce__/**
+*.pyc
+.venv
