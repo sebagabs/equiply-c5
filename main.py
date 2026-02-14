@@ -33,7 +33,7 @@ def distance(coordinates: list[dict[str, float]]) -> float:
 
 def speed(coordinates: list[dict[str, float]]) -> float:
     dist = distance(coordinates)
-    time_elapsed = coordinates[2].get('timestamp', 1) - coordinates[0].get('timestamp', 0)
+    time_elapsed = coordinates[len(coordinates)-1].get('timestamp', 1) - coordinates[0].get('timestamp', 0)
     return round(dist / time_elapsed, 2) if time_elapsed > 0 else 0
 
 
